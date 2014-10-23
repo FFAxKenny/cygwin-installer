@@ -3,7 +3,19 @@ auto-cygwin-install
 
 Automated cygwin install. Just download the project as a zip file, extract and run cygwin-install.bat to install cygwin + apt-cyg + packages required for apt-cyg + optional packages.
 
-You can edit the `packages.bat` batch file to specify which optional packages you'd like installed.
+You can edit the `packages.bat` batch file to specify which optional packages you'd like installed. Modify the `SET PACKAGES` variable with 
+which packages you wish to install.
+
+Current Bugs:
+    * Sometimes fails initial install attempting to install packages.
+        in this case, just wait until cygwin completes it's initial 
+        installation and then run it again. The second setup
+        should install the listed packages + the required 
+        packages for apt-cyg.
+
+
+
+
 
 Created by wjrogers: https://gist.github.com/wjrogers/1016065.
 
